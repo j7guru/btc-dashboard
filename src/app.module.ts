@@ -7,7 +7,7 @@ import { TransactionsService } from './transactions/transactions.service';
 import { TransactionsModule } from './transactions/transactions.module';
 
 @Module({
-  imports: [HttpModule, TransactionsModule, MongooseModule.forRoot('mongodb+srv://user2:user2@cluster0-wbncb.mongodb.net/test?retryWrites=true&w=majority'),],
+  imports: [HttpModule, TransactionsModule, MongooseModule.forRoot('{mongodb-srv-url}'),],
   controllers: [AppController],
   providers: [AppService],
 })
